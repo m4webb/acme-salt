@@ -1,6 +1,6 @@
 yum-update:
   cmd.run:
-    - name: yum update
+    - name: yum -y update
     - order: last
 
 yum-rhscl-repo:

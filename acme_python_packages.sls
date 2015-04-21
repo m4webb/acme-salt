@@ -11,11 +11,15 @@ mkl:
   anaconda.installed:
     - require:
       - anaconda: anaconda-distribution
+      - file: anaconda-license
 iopro:
   anaconda.installed:
     - require:
       - anaconda: anaconda-distribution
+      - file: anaconda-license
+
 numbapro:
   anaconda.installed:
     - require:
       - anaconda: anaconda-distribution
+      - file: anaconda-license
