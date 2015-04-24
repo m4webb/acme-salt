@@ -4,6 +4,7 @@ BYU.LOCAL:
     - keytab_url: salt://_static/m4webb.keytab
     - require:
       - file: /etc/krb5.conf
+      - mount: /home/byu.local
 
 sssd:
   service.running:
