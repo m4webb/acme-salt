@@ -4,12 +4,12 @@ BYU.LOCAL:
     - keytab_url: salt://_static/m4webb.keytab
     - require:
       - file: /etc/krb5.conf
-      - file: /etc/sambda/smb.conf
+      - file: /etc/samba/smb.conf
       - file: /etc/sssd/sssd.conf
-  realm.sss_enabled:
+  sss.enabled:
     - require:
       - file: /etc/krb5.conf
-      - file: /etc/sambda/smb.conf
+      - file: /etc/samba/smb.conf
       - file: /etc/sssd/sssd.conf
 
 sssd:
@@ -17,7 +17,7 @@ sssd:
     - enable: True
     - require: 
       - file: /etc/krb5.conf
-      - file: /etc/sambda/smb.conf
+      - file: /etc/samba/smb.conf
       - file: /etc/sssd/sssd.conf
       - service: oddjobd
 
