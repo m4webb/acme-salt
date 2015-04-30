@@ -1,0 +1,17 @@
+
+module sssd-gpo_child_4 1.0;
+
+require {
+	type sssd_t;
+	type samba_var_t;
+	class file create;
+	class dir { write add_name };
+}
+
+#============= sssd_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow sssd_t samba_var_t:dir { write add_name };
+
+#!!!! This avc is allowed in the current policy
+allow sssd_t samba_var_t:file create;
