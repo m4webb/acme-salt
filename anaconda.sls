@@ -9,6 +9,7 @@ anaconda-update:
         /usr/local/anaconda/bin/conda update --yes anaconda
     - require:
       - anaconda: anaconda-distribution
+    - order: last
 
 /etc/profile.d/anaconda.sh:
   file.managed:

@@ -26,3 +26,9 @@ google-chrome-stable:
     - skip_verify: True # hosted locally
     - sources:
       - google-chrome-stable: http://10.18.32.52/bootstrap/google-chrome-stable_current_x86_64.rpm
+
+google-chrome-selinux:
+  cmd.run:
+    - name: setsebool -P unconfined_chrome_sandbox_transition 0
+    - require:
+      - pkg: google-chrome-stable
