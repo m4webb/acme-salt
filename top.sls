@@ -6,3 +6,4 @@ base:
     - byu_local_realm
     - nfs_home
     - misc
+    - firewalld

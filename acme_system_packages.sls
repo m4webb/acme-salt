@@ -16,10 +16,33 @@ git:
 texlive:
   pkg.installed
 
+bluefish:
+  pkg.installed
+
+geany:
+  pkg.installed
+
+emacs:
+  pkg.installed
+
+mpich:
+  pkg.installed
+
+gsl:
+  pkg.installed
+
+htop:
+  pkg.installed
+
 devtoolset-3:
   pkg.installed:
     - require:
-        - cmd: yum-rhscl-repo
+      - cmd: yum-rhscl-repo
+
+gcc-c++:
+  pkg.installed:
+    - require:
+      - pkg: devtoolset-3
 
 google-chrome-stable:
   pkg.installed:

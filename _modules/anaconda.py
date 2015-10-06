@@ -19,7 +19,7 @@ def update(name, **kwargs):
     return _cmd_run(cmd) == 0
 
 def pip_install(name, **kwargs):
-    cmd = [PIP, 'install', '--update', name]
+    cmd = [PIP, 'install', '--upgrade', name]
     return _cmd_run(cmd) == 0
 
 def pip_remove(name, **kwargs):
