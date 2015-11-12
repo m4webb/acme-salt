@@ -7,3 +7,5 @@ base:
     - nfs_home
     - misc
     - firewalld
+    - users
+    - mongodb

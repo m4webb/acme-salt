@@ -34,6 +34,9 @@ gsl:
 htop:
   pkg.installed
 
+iptraf-ng:
+  pkg.installed
+
 devtoolset-3:
   pkg.installed:
     - require:
