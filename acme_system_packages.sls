@@ -28,6 +28,9 @@ emacs:
 openmpi:
   pkg.installed
 
+mpich:
+  pkg.removed
+
 gsl:
   pkg.installed
 
