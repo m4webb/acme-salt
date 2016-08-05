@@ -25,7 +25,7 @@ geany:
 emacs:
   pkg.installed
 
-mpich:
+openmpi:
   pkg.installed
 
 gsl:
